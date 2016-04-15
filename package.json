@@ -1,0 +1,106 @@
+{
+  "_args": [
+    [
+      "avro-js",
+      "/Users/hieutrtr/projects/test-avro"
+    ]
+  ],
+  "_from": "avro-js@*",
+  "_id": "avro-js@1.8.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/avro-js",
+  "_nodeVersion": "5.0.0",
+  "_npmOperationalInternal": {
+    "host": "packages-5-east.internal.npmjs.com",
+    "tmp": "tmp/avro-js-1.8.0.tgz_1455896083408_0.7546429915819317"
+  },
+  "_npmUser": {
+    "email": "hieutrantrung.it@gmail.com",
+    "name": "Hieu Slash"
+  },
+  "_npmVersion": "2.11.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "avro-js",
+    "raw": "avro-js",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/avro-js/-/avro-js-1.8.0.tgz",
+  "_shasum": "b39b348baed332bd0a81ca2d0c82c3497b1a9236",
+  "_shrinkwrap": null,
+  "_spec": "avro-js",
+  "author": {
+    "email": "dev@avro.apache.org",
+    "name": "Avro Developers"
+  },
+  "browser": {
+    "./lib": "./etc/browser/avro.js",
+    "crypto": "./etc/browser/crypto.js"
+  },
+  "contributors": [
+    {
+      "name": "Matthieu Monsch",
+      "email": "monsch@alum.mit.edu"
+    },
+    {
+      "name": "Quinn Slack",
+      "email": "sqs@cs.stanford.edu"
+    }
+  ],
+  "dependencies": {
+    "underscore": "*"
+  },
+  "description": "JavaScript Avro implementation",
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.3.19",
+    "mocha": "^2.3.2",
+    "tmp": "^0.0.28"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "b39b348baed332bd0a81ca2d0c82c3497b1a9236",
+    "tarball": "https://registry.npmjs.org/avro-js/-/avro-js-1.8.0.tgz"
+  },
+  "engine": {
+    "node": ">=0.11"
+  },
+  "files": [
+    "LICENSE",
+    "NOTICE",
+    "etc/browser",
+    "etc/deprecated/validator.js",
+    "lib"
+  ],
+  "keywords": [
+    "avro",
+    "json"
+  ],
+  "license": "Apache-2.0",
+  "main": "./lib",
+  "maintainers": [
+    {
+      "name": "mtth",
+      "email": "monsch@alum.mit.edu"
+    }
+  ],
+  "name": "avro-js",
+  "noAnalyze": true,
+  "optionalDependencies": {},
+  "repository": {
+    "type": "svn",
+    "url": "http://svn.apache.org/repos/asf/avro/trunk/lang/js/"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "test": "mocha --ui tdd --reporter dot"
+  },
+  "version": "1.8.0"
+}
