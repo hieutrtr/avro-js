@@ -1,8 +1,7 @@
 {
   "_args": [
     [
-      "avro-js",
-      "/Users/hieutrtr/projects/test-avro"
+      "avro-js"
     ]
   ],
   "_from": "avro-js@*",
