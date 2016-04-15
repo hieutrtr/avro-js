@@ -1,7 +1,7 @@
 {
   "_args": [
     [
-      "avro-js"
+      "rova-js"
     ]
   ],
   "_from": "avro-js@*",
@@ -90,7 +90,7 @@
       "email": "monsch@alum.mit.edu"
     }
   ],
-  "name": "avro-js",
+  "name": "rova-js",
   "noAnalyze": true,
   "optionalDependencies": {},
   "repository": {
