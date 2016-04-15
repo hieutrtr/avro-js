@@ -17,7 +17,7 @@ limitations under the License.
 -->
 
 
-# Avro-js
+# Rova-js
 
 Pure JavaScript implementation of the [Avro specification](https://avro.apache.org/docs/current/spec.html).
 
@@ -28,16 +28,16 @@ Pure JavaScript implementation of the [Avro specification](https://avro.apache.o
 + Full Avro support, including recursive schemas, sort order, and evolution.
 + Serialization of arbitrary JavaScript objects via logical types.
 + Unopinionated 64-bit integer compatibility.
-+ No dependencies, `avro-js` even runs in the browser.
++ No dependencies, `rova-js` even runs in the browser.
 
 
 ## Installation
 
 ```bash
-$ npm install avro-js
+$ npm install rova-js
 ```
 
-`avro-js` is compatible with all versions of [node.js][] since `0.11` and major
+`rova-js` is compatible with all versions of [node.js][] since `0.11` and major
 browsers via [browserify][].
 
 
@@ -51,14 +51,14 @@ See `doc/` folder.
 Inside a node.js module, or using browserify:
 
 ```javascript
-var avro = require('avro-js');
+var rova = require('rova-js');
 ```
 
 + Encode and decode objects:
 
   ```javascript
   // We can declare a schema inline:
-  var type = avro.parse({
+  var type = rova.parse({
     name: 'Pet',
     type: 'record',
     fields: [
@@ -75,7 +75,7 @@ var avro = require('avro-js');
 
   ```javascript
   // We can also parse a JSON-stringified schema:
-  var type = avro.parse('{"type": "fixed", "name": "Id", "size": 4}');
+  var type = rova.parse('{"type": "fixed", "name": "Id", "size": 4}');
   var id = type.random(); // E.g. Buffer([48, 152, 2, 123])
   ```
 
@@ -83,7 +83,7 @@ var avro = require('avro-js');
 
   ```javascript
   // Or we can specify a path to a schema file (not in the browser):
-  var type = avro.parse('./Person.avsc');
+  var type = rova.parse('./Person.avsc');
   var person = {name: 'Bob', address: {city: 'Cambridge', zip: '02139'}};
   var status = type.isValid(person); // Boolean status.
   ```
@@ -92,7 +92,7 @@ var avro = require('avro-js');
   container file (not in the browser):
 
   ```javascript
-  avro.createFileDecoder('./records.avro')
+  rova.createFileDecoder('./records.avro')
     .on('metadata', function (type) { /* `type` is the writer's type. */ })
     .on('data', function (record) { /* Do something with the record. */ });
   ```
