@@ -1,11 +1,8 @@
 {
   "_args": [
-    [
-      "rova-js"
-    ]
   ],
-  "_from": "avro-js@*",
-  "_id": "avro-js@1.8.0",
+  "_from": "rova-js@*",
+  "_id": "rova-js@1.8.2",
   "_inCache": true,
   "_installable": true,
   "_location": "/avro-js",
@@ -101,5 +98,5 @@
     "clean": "rm -rf node_modules",
     "test": "mocha --ui tdd --reporter dot"
   },
-  "version": "1.8.0"
+  "version": "1.8.2"
 }
